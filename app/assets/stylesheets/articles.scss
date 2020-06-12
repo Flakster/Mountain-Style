@@ -21,16 +21,17 @@
   background: center/cover no-repeat;
   font-size: 20px;
   font-weight: 800;
-  height: 60vh;
+  height: 58vh;
   
   .popular-title {
-    color: white;
+    font-size: x-large;
+    color: #FD6000;
     text-shadow: 2px 2px black;
     padding: 10px;
   }
   
   .popular-body {
-    color: mistyrose;
+    color: white;
     text-shadow: 2px 2px black;
     padding: 10px;
   }
@@ -43,18 +44,19 @@
     position: relative;
     flex: 1;
     background: center/cover no-repeat;
-    height: 30vh;
+    height: 32vh;
   }
 
   .lower-link {
     position: absolute;
-    padding: 5px;
+    padding: 3px 5px;
     left: 10px;
   }
 
   .category-link {
     top: 10px;
-    background-color: rgba(95, 25, 93, 0.5);
+    background-color: rgba(50, 50, 255, 0.2);
+    border-bottom: 5px solid #ffff01;
   }
 
   .article-link {

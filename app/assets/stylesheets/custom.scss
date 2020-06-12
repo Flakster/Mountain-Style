@@ -45,8 +45,8 @@ a {
 .nav {
   display: flex;
   justify-content: space-between;
-  padding: 16px 48px;
-  background-color: White;
+  align-items: center;
+  padding: 1vh 2vw;
   color: $primary-color-light;
 
   .menu {
