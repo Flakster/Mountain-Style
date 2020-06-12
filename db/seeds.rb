@@ -6,12 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 User.create({name: 'User1', email: 'user1@mail.com', password: '123456'})
-Category.create({name: 'Category1', priority: 1})
-Category.create({name: 'Category2', priority: 2})
-Category.create({name: 'Category3', priority: 3})
-Category.create({name: 'Category4', priority: 4})
-Category.create({name: 'Category5', priority: 5})
-Article.create({title: 'First article',
-                 body: 'This is the text for the first article',
-                 image: 'default',
-                 author_id: 1})
+Category.create({name: 'Offgrid', priority: 1})
+Category.create({name: 'Minimalist', priority: 2})
+Category.create({name: 'Chalet', priority: 3})
+Category.create({name: 'Landscape', priority: 4})
+Category.create({name: 'Nature', priority: 5})
+Article.create({title: 'Silence is a treasure', body: 'This is the text for the first article',image: 'default', author_id: 1})
+Tag.create({article_id: 1, category_id: 5}) 
