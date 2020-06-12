@@ -1,3 +1,34 @@
 // Place all the styles related to the Categories controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.category-main-container {
+  margin: 0;
+
+  .category-title {
+    margin: 10px
+  }
+
+  .articles-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .single-article{
+      display: flex;
+      width: 50vw;
+
+      .article-item {
+        flex: 1
+      }
+
+      .article-text {
+        margin: 5px;
+        text-align: justify;
+      }
+
+      .article-item-image {
+        width: 25vw;
+      }
+    }
+  }
+}

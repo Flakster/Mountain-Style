@@ -1,5 +1,5 @@
 <div class="popular-article" style="background-image: url(<%= image_path "#{@popular_article.image}"%>);">
-  <h1 class="popular-title"><%= @popular_article.title%></h1>
+  <h1 class="popular-title"><%= link_to @popular_article.title, @popular_article%></h1>
   <p class="popular-body"><%= @popular_article.body.truncate(200)%></p>
 </div>
 <div class="category-container">

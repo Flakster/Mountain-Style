@@ -1,14 +1,18 @@
-<p id="notice"><%= notice %></p>
+<main class="category-main-container">
+  <h1 class="category-title" >
+    <%= @category.name %>
+  </h1>
 
-<p>
-  <strong>Name:</strong>
-  <%= @category.name %>
-</p>
+  <div class="articles-container">
+  <% @category.articles.each_with_index do |article, index|%>
+    <div class="single-article">
+      <% if left_image?(index) %>
+        <%= render 'card-a', article: article %>
+      <% else %>
+        <%= render 'card-b', article: article %>
+      <% end %>
+    </div>
+  <% end %>
+  </div>
 
-<p>
-  <strong>Priority:</strong>
-  <%= @category.priority %>
-</p>
-
-<%= link_to 'Edit', edit_category_path(@category) %> |
-<%= link_to 'Back', categories_path %>
+</main>

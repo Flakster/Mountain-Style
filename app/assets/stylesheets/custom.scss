@@ -1,14 +1,14 @@
 
 $primary-color: #FD6000;
-$primary-color-light: #e6f5ff;
+$primary-color-light: #888;
 $primary-color-text: #212121;
 $color-link: #555;
 $color-link-light: #888;
 $divider-color: #bdbdbd;
 
 @font-face{
-  font-family: 'Chivo';
-  src:font-url('Chivo-Regular.otf')
+  font-family: 'Lato';
+  src:font-url('Lato-Regular.ttf')
 }
 
 
@@ -24,7 +24,7 @@ body {
   background: #ffffff;
   position: relative;
   
-  font-family: Chivo;
+  font-family: Lato;
 }
 
 h1,
@@ -48,6 +48,7 @@ a {
   align-items: center;
   padding: 1vh 2vw;
   color: $primary-color-light;
+  border-bottom: thick solid $primary-color-light;
 
   .menu {
     display: flex;
