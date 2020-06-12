@@ -1,0 +1,103 @@
+$primary-color: #FD6000;
+$primary-color-light: #e6f5ff;
+$primary-color-text: #212121;
+$color-link: #555;
+$color-link-light: #888;
+$divider-color: #bdbdbd;
+
+@font-face{
+  font-family: 'Chivo';
+  src:font-url('Chivo-Regular.otf')
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background: #ffffff;
+  position: relative;
+  
+  font-family: Chivo;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  //color: $primary-color-link;
+  color: purple;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 48px;
+  background-color: White;
+  color: $primary-color-light;
+
+  .menu {
+    display: flex;
+    width: 80%;
+    text-align: right;
+    justify-content: flex-end;
+
+    .menu-item {
+      margin: 0 15px;
+
+      .active {
+        a {
+          color: $color-link;
+          ;
+        }
+      }
+    }
+  }
+}
+
+.nav a {
+  color: $color-link;
+  font-weight: 900;
+  margin: 0 5px;
+}
+
+.nav a:hover {
+  color: $color-link-light;
+}
+
+.notice,
+.alert {
+  margin-bottom: 8px;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  padding: 5px;
+  color: dimgrey;
+  font-size: 14px;
+}
+
+.notice {
+  background-color: #d4f6c6;
+}
+
+.alert {
+  background-color: #f6cfc6;
+}
+
+.errors {
+  font-size: 10px;
+  color: red;
+}
