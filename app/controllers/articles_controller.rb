@@ -8,6 +8,8 @@ class ArticlesController < ApplicationController
   # GET /articles.json
   def index
     @articles = Article.all
+    @popular_article = Article.first
+    @categories = Category.priority_ordered
   end
 
   # GET /articles/1
