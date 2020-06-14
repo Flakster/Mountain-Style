@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'votes/create'
+  get 'votes/destroy'
   root 'articles#index'
   resources :categories
   resources :articles
