@@ -1,9 +1,18 @@
-<div class="article-item article-image">
-  <img class="article-item-image" src="<%= image_path article.image %>" alt=<%= article.title %> >
+<div class="article-item article-image" style="background-image: url(<%= image_path article.image%>)">
 </div>
 
 <div class="article-item article-text">
-  <b><%= article.title %></b><br>
-  <%= article.body %>
-  <%= link_to 'Vote', article_votes_path(article_id: article.id), method: :post %>
+  <title class="category-name-box text-item">
+    <%= @category.name %>
+  </title>
+  <title class="article-title-box text-item">
+    <%= article.title %>
+  </title>
+  <div class="body-box text-item">
+    <%= article.body %>
+  </div>
+  <div class="read-more-box text-item">
+    <%= link_to 'Read More', "/articles/#{article.id}" %>
+  </div>
+  <%#= link_to 'Vote', article_votes_path(article_id: article.id, category: @category), method: :post %>
 </div>

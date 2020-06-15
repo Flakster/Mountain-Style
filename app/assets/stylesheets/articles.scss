@@ -2,31 +2,50 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 .article-container {
-  margin: 20px;
+  position: relative;
+  display: flex;
+  top: 20px;
+  width: 98%;
+  margin: auto;
 
-  .article-subtitle{
-    color: gray;
-    font-style: italic;
+  .text-content{
+    margin-right: 20px;
+    flex: 1;
+
+    .article-info {
+      color: gray;
+      font-style: italic;
+    }
+    .body-content {
+      position: relative;
+      text-align: justify;
+      margin: 30px 0;
+    }
+  }
+
+  .image-content {
+    position: relative;
+    flex: 1;
+
+    .article-image {
+      width: 100%;
+      height: 60vh;
+    }
   }
   
-  .article-image {
-    width: 60vw;
-    height: 60vh;
-  }
 }
 .popular-article {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-end ;
   background: center/cover no-repeat;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 800;
   height: 57vh;
   
   .popular-title {
-    font-size: x-large;
-    text-shadow: 2px 2px black;
-    padding: 10px;
+    font-size: large;
+    padding: 0 10px;
 
     a {
       color: #FD6000;
@@ -35,7 +54,6 @@
   
   .popular-body {
     color: white;
-    text-shadow: 2px 2px black;
     padding: 10px;
   }
 }
@@ -58,17 +76,14 @@
 
   .category-link {
     top: 10px;
-    background-color: rgba(50, 50, 255, 0.2);
     border-bottom: 5px solid #ffff01;
   }
 
   .article-link {
-    bottom: 10px;
-    background-color: rgba(18, 37, 13, 0.4);
+    bottom: 20px;
   }
   a {
     color : white;
     font-weight: 800;
-    text-shadow: 2px 2px black;
   }
 }

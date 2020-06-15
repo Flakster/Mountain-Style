@@ -1,10 +1,14 @@
-<div class="popular-article" style="background-image: url(<%= image_path "#{@popular_article.image}"%>);">
+<div class="popular-article" style="background-image: linear-gradient(to top,
+                    rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2) 50%),
+                    url(<%= image_path "#{@popular_article.image}"%>);">
   <h1 class="popular-title"><%= link_to @popular_article.title, @popular_article%></h1>
   <p class="popular-body"><%= @popular_article.body.truncate(200)%></p>
-</div>
+</div> 
 <div class="category-container">
   <% @categories.each do |category| %>
-    <article class='category-item' style="background-image: url(<%= image_path "#{article_properties(category)[:image]}"%>);">
+    <article class='category-item' style="background-image: linear-gradient(to top,
+                    rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 100%),
+                    url(<%= image_path "#{article_properties(category)[:image]}"%>);">
       <span class="lower-link category-link">
         <%= link_to category.name, category %>
       </span>
