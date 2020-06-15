@@ -5,4 +5,5 @@
 <div class="article-item article-text">
   <b><%= article.title %></b><br>
   <%= article.body %>
+  <%= link_to 'Vote', article_votes_path(article_id: article.id), method: :post %>
 </div>
