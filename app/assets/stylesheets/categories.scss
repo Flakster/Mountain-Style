@@ -2,17 +2,20 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 .category-main-container {
+  position: relative;
+  bottom: 0;
   margin: 0;
 
+  
   .category-title {
     margin: 10px
   }
-
+  
   .articles-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
+    
     .single-article{
       display: flex;
       width: 50vw;
@@ -23,7 +26,6 @@
       }
 
       .article-text {
-        background-color: white;
         position: relative;
         text-align: justify;
 
@@ -68,5 +70,31 @@
         overflow: hidden;
       }
     }
+  }
+}
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+  background-color: #4e443e;
+  height: 12vh;
+  padding: 0 30px;
+
+  .logo-area {
+    display: flex;
+    .logo-text {
+      font-size: x-large;
+    }
+  }
+
+
+  a {
+    color: #fd6000;
   }
 }

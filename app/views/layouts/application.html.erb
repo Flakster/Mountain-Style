@@ -11,10 +11,14 @@
 
   <body>
     <nav class="nav">
-    <%#= link_to 'Mountain Blog Home', root_path %>
-    <%= link_to root_path do%>
-      <%= image_tag "mountainlogo" %>
-    <% end %>
+    <div class="home">
+      <%= link_to root_path do%>
+        <div class = "logo-text" >MounTAinsTyle</div>
+      <% end %>
+      <%= link_to root_path do%>
+        <%= image_tag "mountains", alt: "Mountain Style Logo" %>
+      <% end %>
+    </div>
     <div class="menu">
       <% if user_signed_in? %>
           <%= link_to current_user.name, edit_user_registration_path, :class => 'navbar-link' %> |

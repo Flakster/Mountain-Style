@@ -24,6 +24,7 @@ $divider-color: #bdbdbd;
 body {
   background: white;
   position: relative;
+  height: 100vh;
   font-family: Lato;
   overflow: hidden;
 }
@@ -47,9 +48,19 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 1vh 2vw;
-  background-color: white;
   color: $primary-color-light;
   border-bottom: thick solid $primary-color-light;
+
+  .home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+    
+    .logo-text {
+      font-size: x-large;
+    }
+  }
 
   .menu {
     display: flex;
