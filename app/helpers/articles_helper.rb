@@ -12,4 +12,8 @@ module ArticlesHelper
     end
     return properties_hash
   end
+
+  def owner?(autor_id)
+    current_user && autor_id == current_user.id
+  end
 end

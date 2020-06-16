@@ -14,7 +14,13 @@ class ArticlesController < ApplicationController
 
   # GET /articles/1
   # GET /articles/1.json
-  def show; end
+  def show
+    if current_user.nil?
+      @vote = nil
+    else
+      @vote = Vote.voteid(current_user.id, @article.id).take
+    end
+  end
 
   # GET /articles/new
   def new
