@@ -6,15 +6,15 @@ class Vote < ApplicationRecord
   belongs_to :user
   belongs_to :article
 
-  def self.number_of_votes(user_id,article_id)
-    where(user_id: user_id).
-    where(article_id: article_id).
-    count
-  end
-
   def self.voteid(user_id,article_id)
     where(user_id: user_id).
     where(article_id: article_id).
     select(:id)
+  end
+
+  def self.popular_article
+    count_hash = Vote.group(:article_id).count
+    article_id = count_hash.max_by{ |k,v| v}
+    Article.find(article_id)
   end
 end

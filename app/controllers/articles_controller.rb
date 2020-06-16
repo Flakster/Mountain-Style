@@ -8,7 +8,7 @@ class ArticlesController < ApplicationController
   # GET /articles.json
   def index
     @articles = Article.all
-    @popular_article = Article.first
+    @popular_article = Vote.popular_article.first
     @categories = Category.priority_ordered
   end
 
