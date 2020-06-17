@@ -93,11 +93,19 @@
     }
   }
 
+  .links-copyright {
+    font-size: small;
+
+  }
+
   .social-contact {
     display: flex;
     align-items: center;
 
-    .connect { margin-right: 5px }
+    .connect { 
+      font-size: small;
+      margin-right: 5px 
+    }
     
     .icons{
       font-size: 20px;
