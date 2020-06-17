@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class ArticlesController < ApplicationController
-  before_action :authenticate_user!, :except => [:show, :index]
+  before_action :authenticate_user!, except: %i[show index]
   before_action :set_article, only: %i[show edit update destroy]
 
   # GET /articles
@@ -15,11 +15,11 @@ class ArticlesController < ApplicationController
   # GET /articles/1
   # GET /articles/1.json
   def show
-    if current_user.nil?
-      @vote = nil
-    else
-      @vote = Vote.voteid(current_user.id, @article.id).take
-    end
+    @vote = if current_user.nil?
+              nil
+            else
+              Vote.voteid(current_user.id, @article.id).take
+            end
   end
 
   # GET /articles/new
@@ -79,6 +79,6 @@ class ArticlesController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def article_params
-    params.require(:article).permit(:title, :body, :image, :author_id, tags_attributes: [:category_id, :id])
+    params.require(:article).permit(:title, :body, :image, :author_id, tags_attributes: %i[category_id id])
   end
 end
