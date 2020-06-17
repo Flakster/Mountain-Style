@@ -14,7 +14,7 @@ class Vote < ApplicationRecord
 
   def self.popular_article
     count_hash = Vote.group(:article_id).count
-    article_id = count_hash.max_by { |k, v| v }
+    article_id = count_hash.max_by { |_k, v| v }
     if article_id.nil?
       Article.first
     else
