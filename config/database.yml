@@ -87,6 +87,7 @@ test:
 #
 production:
   <<: *default
-  database: mountain_blog_production
-  username: mountain_blog
-  password: <%= ENV['MOUNTAIN_BLOG_DATABASE_PASSWORD'] %>
+  database: <%= ENV['DATABASE_URL'] %>
+  #database: mountain_blog_production
+  #username: mountain_blog
+  #password: <%= ENV['MOUNTAIN_BLOG_DATABASE_PASSWORD'] %>
