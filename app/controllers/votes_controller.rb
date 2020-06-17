@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class VotesController < ApplicationController
   before_action :authenticate_user!
   before_action :find_article
@@ -26,6 +28,5 @@ class VotesController < ApplicationController
 
   def find_article
     @article = Article.find(params[:article_id])
-
   end
 end
