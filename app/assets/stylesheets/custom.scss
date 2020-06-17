@@ -1,10 +1,10 @@
 
-$primary-color: #FD6000;
+$primary-color: #fd6000;
 $primary-color-dark: #993d00;
 $primary-color-light: #888;
 $primary-color-text: #212121;
-$color-link: #555;
-$color-link-light: #888;
+$color-link: #847F7A;
+$color-link-light: #fd6000;
 $divider-color: #bdbdbd;
 
 @font-face{
@@ -69,8 +69,6 @@ a {
     justify-content: flex-end;
 
     .menu-item {
-      margin: 0 15px;
-
       .active {
         a {
           color: $color-link;
