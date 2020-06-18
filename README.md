@@ -69,7 +69,7 @@ bundle install
 
 ## See a live demo [Here](https://mountain-blog2.herokuapp.com/)
 
-## Watch a video with the presentation of the project [Soon](#)
+## Watch a video with the presentation of the project [Here](https://www.loom.com/share/2e56e80772c34532a437fae034b712c3)
 
 
 ## Acknowledgments:
