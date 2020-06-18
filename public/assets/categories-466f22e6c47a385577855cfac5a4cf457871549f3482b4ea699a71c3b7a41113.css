@@ -1,0 +1,146 @@
+/* line 4, app/assets/stylesheets/categories.scss */
+.category-main-container {
+  position: relative;
+  bottom: 0;
+  margin: 0;
+}
+
+/* line 10, app/assets/stylesheets/categories.scss */
+.category-main-container .category-title {
+  margin: 10px;
+}
+
+/* line 14, app/assets/stylesheets/categories.scss */
+.category-main-container .articles-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* line 19, app/assets/stylesheets/categories.scss */
+.category-main-container .articles-container .single-article {
+  display: flex;
+  width: 50vw;
+  height: 40vh;
+}
+
+/* line 24, app/assets/stylesheets/categories.scss */
+.category-main-container .articles-container .single-article .article-item {
+  flex: 1;
+}
+
+/* line 28, app/assets/stylesheets/categories.scss */
+.category-main-container .articles-container .single-article .article-text {
+  position: relative;
+  text-align: justify;
+}
+
+/* line 32, app/assets/stylesheets/categories.scss */
+.category-main-container .articles-container .single-article .article-text .text-item {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+}
+
+/* line 38, app/assets/stylesheets/categories.scss */
+.category-main-container .articles-container .single-article .article-text .category-name-box {
+  display: inline-block;
+  top: 12px;
+  color: #fd6000;
+  border-bottom: 3px solid #fd6000;
+  right: auto;
+}
+
+/* line 46, app/assets/stylesheets/categories.scss */
+.category-main-container .articles-container .single-article .article-text .article-title-box {
+  display: inline-block;
+  top: 45px;
+  font-weight: 800;
+}
+
+/* line 52, app/assets/stylesheets/categories.scss */
+.category-main-container .articles-container .single-article .article-text .body-box {
+  top: 65px;
+}
+
+/* line 56, app/assets/stylesheets/categories.scss */
+.category-main-container .articles-container .single-article .article-text .read-more-box {
+  bottom: 10px;
+}
+
+/* line 59, app/assets/stylesheets/categories.scss */
+.category-main-container .articles-container .single-article .article-text .read-more-box a {
+  color: #fd6000;
+}
+
+/* line 67, app/assets/stylesheets/categories.scss */
+.category-main-container .articles-container .single-article .article-image {
+  width: 25vw;
+  background-size: cover;
+  overflow: hidden;
+}
+
+/* line 75, app/assets/stylesheets/categories.scss */
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+  background-color: #4e443e;
+  height: 12vh;
+  padding: 0 30px;
+}
+
+/* line 89, app/assets/stylesheets/categories.scss */
+.footer-container .logo-area {
+  display: flex;
+}
+
+/* line 91, app/assets/stylesheets/categories.scss */
+.footer-container .logo-area .logo-text {
+  font-size: x-large;
+}
+
+/* line 96, app/assets/stylesheets/categories.scss */
+.footer-container .links-copyright {
+  font-size: small;
+}
+
+/* line 101, app/assets/stylesheets/categories.scss */
+.footer-container .social-contact {
+  display: flex;
+  align-items: center;
+}
+
+/* line 105, app/assets/stylesheets/categories.scss */
+.footer-container .social-contact .connect {
+  font-size: small;
+  margin-right: 5px;
+}
+
+/* line 110, app/assets/stylesheets/categories.scss */
+.footer-container .social-contact .icons {
+  font-size: 20px;
+  color: #4e443e;
+  background-color: #fd6000;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+/* line 120, app/assets/stylesheets/categories.scss */
+.footer-container .social-contact .icons a {
+  color: #4e443e;
+}
+
+/* line 125, app/assets/stylesheets/categories.scss */
+.footer-container a {
+  color: #fd6000;
+}

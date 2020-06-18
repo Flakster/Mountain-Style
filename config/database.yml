@@ -24,6 +24,9 @@ default: &default
 development:
   <<: *default
   database: mountain_blog_development
+  host: localhost
+  username: mountain_blog
+  password: pass123
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -58,6 +61,10 @@ development:
 test:
   <<: *default
   database: mountain_blog_test
+  host: localhost
+  username: mountain_blog
+  password: pass123
+
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -80,6 +87,7 @@ test:
 #
 production:
   <<: *default
-  database: mountain_blog_production
-  username: mountain_blog
-  password: <%= ENV['MOUNTAIN_BLOG_DATABASE_PASSWORD'] %>
+  database: <%= ENV['DATABASE_URL'] %>
+  #database: mountain_blog_production
+  #username: mountain_blog
+  #password: <%= ENV['MOUNTAIN_BLOG_DATABASE_PASSWORD'] %>
