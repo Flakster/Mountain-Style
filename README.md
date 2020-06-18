@@ -67,7 +67,7 @@ bundle install
 ```
 11. Open your web browser and go to **localhost:3000**
 
-## See a live demo [Soon](#)
+## See a live demo [Here](https://mountain-blog2.herokuapp.com/)
 
 ## Watch a video with the presentation of the project [Soon](#)
 
