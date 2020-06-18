@@ -1,8 +1,8 @@
 <div class="popular-article" style="background-image: linear-gradient(to top,
                     rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2) 50%),
-                    url(<%= image_path "#{@popular_article.image}"%>);">
-  <h1 class="popular-title"><%= link_to @popular_article.title, @popular_article%></h1>
-  <p class="popular-body"><%= @popular_article.body.truncate(200)%></p>
+                    url(<%= image_path "#{main_properties(@popular_article)[:image]}"%>);">
+  <h1 class="popular-title"><%= link_to main_properties(@popular_article)[:title], @popular_article%></h1>
+  <p class="popular-body"><%= main_properties(@popular_article)[:body].truncate(200)%></p>
 </div> 
 <div class="category-container">
   <% @categories.each do |category| %>

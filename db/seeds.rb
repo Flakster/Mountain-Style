@@ -18,7 +18,7 @@ Article.create({title: 'Silence is a treasure', body: 'Nam libero tempore, cum s
                                                        ut et voluptates repudiandae sint et molestiae non recusandae.
                                                        Itaque earum rerum hic tenetur a sapiente delectus, ut aut 
                                                        reiciendis voluptatibus maiores alias consequatur aut perferendis
-                                                       doloribus asperiores repellat',image: 'default', author_id: 1})
+                                                       doloribus asperiores repellat',image: 'defimg', author_id: 1})
 Article.create({title: 'May your food be your medicine', body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris

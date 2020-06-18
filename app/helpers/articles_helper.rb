@@ -1,9 +1,21 @@
 # frozen_string_literal: true
 
 module ArticlesHelper
+
+  def main_properties(article)
+    main_hash = if article.nil?
+                  { image: 'defimg', title: '', link: '#' }
+                else
+                  { image: article.image,
+                    title: article.title,
+                    body: article.body }
+                end
+    main_hash
+  end
+
   def article_properties(category)
     properties_hash = if category.articles.count.zero?
-                        { image: 'default', title: '', link: '#' }
+                        { image: 'defimg', title: '', link: '#' }
                       else
                         { image: category.articles.recent.first.image,
                           title: category.articles.recent.first.title,
