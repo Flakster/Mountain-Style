@@ -67,7 +67,7 @@ bundle install
 ```
 11. Open your web browser and go to **localhost:3000**
 
-## See a live demo [Soon](#)
+## See a live demo [Here](https://mountain-blog2.herokuapp.com/)
 
 ## Watch a video with the presentation of the project [Soon](#)
 
@@ -77,10 +77,13 @@ bundle install
  * [Microverse](http://microverse.org)
  * [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) for this awesome design
  
-## License Soon
+## Show your support
+Give a ⭐️ if you like this project!
+ 
+## License
+This project is [MIT](https://github.com/Flakster/Mountain-Style/blob/blog/LICENSE) Licensed
 
 ## Author
-
 👤 Carlos Santamaría
 
 * Twitter: [@Flakster ](https://twitter.com/Flakster )
