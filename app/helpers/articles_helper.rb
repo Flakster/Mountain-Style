@@ -4,7 +4,7 @@ module ArticlesHelper
 
   def main_properties(article)
     main_hash = if article.nil?
-                  { image: 'defimg', title: '', link: '#' }
+                  { image: 'defimg.jpg', title: '', link: '#' }
                 else
                   { image: article.image,
                     title: article.title,
@@ -15,7 +15,7 @@ module ArticlesHelper
 
   def article_properties(category)
     properties_hash = if category.articles.count.zero?
-                        { image: 'defimg', title: '', link: '#' }
+                        { image: 'defimg.jpg', title: '', link: '#' }
                       else
                         { image: category.articles.recent.first.image,
                           title: category.articles.recent.first.title,
